@@ -2,7 +2,12 @@
 
 ## Introduction
 
-Hello :+1::sparkling_heart:	 this is my solution for the backend developer internship, registered users has the ability to upload one or bulk images, this app accept image file type in JPG, PNG, JPEG and alot more
+Hello :+1::sparkling_heart:	 this is a Image Repository for uploading image fast and easy for storage, it gives  registered users the ability to upload one or bulk images in any format at once, there is a one-to-many relationship between Users and Images, to map users to its uploaded images.
+## Features
+```
+1. 
+```
+
 
 ## Technologies Used
 ```
