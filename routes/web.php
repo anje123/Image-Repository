@@ -17,7 +17,3 @@ use App\Http\Controllers\ImageController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::apiResources([
-    'image' => ImageController::class,
-]);

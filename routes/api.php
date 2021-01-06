@@ -14,13 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
 Route::middleware('auth:api')->post('/image/add', [App\Http\Controllers\API\ImageController::class, 'store']);
-
-
 Route::post('register', [App\Http\Controllers\Auth\UserController::class, 'register']);
 Route::post('login', [App\Http\Controllers\Auth\UserController::class, 'login']);
 Route::post('logout', [App\Http\Controllers\Auth\UserController::class, 'logout']);
