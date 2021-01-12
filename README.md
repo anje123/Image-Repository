@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a Image Repository for uploading image fast and easy for storage, it gives registered users the ability to upload one or bulk images in any format at once..
+This is a Image Repository for uploading image fast and easy for storage, it gives registered users the ability to upload one or bulk images in any format at once.
 
 
 ## Technologies Used
@@ -80,4 +80,4 @@ you can quickly create a bucket check https://cloud.google.com/storage/docs/crea
 | ----------- | --------------- | --------- | ----------- | ------ |
 | CRUD OP     | CREATE          | READ      | UPDATE      | DELETE |
 
-### :+1::sparkling_heart:	
+### Thanks For Reviewing The Application :+1::sparkling_heart:	
