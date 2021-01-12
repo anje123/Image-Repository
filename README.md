@@ -2,17 +2,23 @@
 
 ## Introduction
 
-Hello :+1::sparkling_heart:	 this is a Image Repository for uploading image fast and easy for storage, it gives  registered users the ability to upload one or bulk images in any format at once, there is a one-to-many relationship between Users and Images, to map users to its uploaded images.
+This is a Image Repository for uploading image fast and easy for storage, it gives registered users the ability to upload one or bulk images in any format at once..
 
 
 ## Technologies Used
-```
-1. JWT
-2. PHP [Laravel]
-3. MYSQL
-4. AMAZON S3
 
-```
+#### 1. Google Cloud Storage.
+
+There are several good cloud storage platforms but also I made use of Google Cloud Storage because it provides worldwide, highly durable object storage that scales to exabytes of data, it is also built to easily optimize price and performance, which I used due to easy access to data instantly, store images and also retrieve them anytime.
+
+#### 2. Redis
+
+I utilize redis to make easy access to images faster because Redis is very fast and can perform about 81000 GETs per second, and also supports data structures such as strings, hashes, lists, sets, and sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes with radius queries.
+
+#### 3.   JWT - Authentication
+#### 4.   PHP [Laravel] - Framework
+#### 5.   MYSQL  - Database
+
 
 
 ### HOW TO SETUP:
@@ -30,8 +36,11 @@ Hello :+1::sparkling_heart:	 this is a Image Repository for uploading image fast
  php artisan migrate
 ```
 ```
-1. Create An Account With Amazon Cloud Service  https://docs.aws.amazon.com/AmazonS3/latest/gsg/SigningUpforS3.html
-2. Fill the AWS Credentials on your env file
+1. Creating and activating a gcloud service account will give you a JSON file for accessing Google Cloud check
+https://cloud.google.com/speech-to-text/docs/quickstart-gcloud for quickstart, Once you’ve met the requirement,
+you can quickly create a bucket check https://cloud.google.com/storage/docs/creating-buckets for more information.
+
+2. Fill the GCS Credentials on your env file
 3. composer install
 ```
 
@@ -47,10 +56,12 @@ Hello :+1::sparkling_heart:	 this is a Image Repository for uploading image fast
     * POST /api/login
         payload: email, password
 
-
 * To upload Image:
     * POST /api/image/add
       form_data:  imageField[] , accept both single and multiple images
+
+* To retrieve Images:
+    * GET /api/images
      
  * To logout a user :
     * POST /api/logout

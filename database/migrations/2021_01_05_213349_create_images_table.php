@@ -18,6 +18,7 @@ class CreateImagesTable extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->string('filename');
             $table->string('url');
+            $table->enum('permission', ['private', 'public']);
             $table->timestamps();
         });
     }

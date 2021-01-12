@@ -21,4 +21,6 @@ Route::post('login', [App\Http\Controllers\Auth\UserController::class, 'login'])
 Route::post('logout', [App\Http\Controllers\Auth\UserController::class, 'logout']);
 Route::post('refresh', [App\Http\Controllers\Auth\UserController::class, 'refresh']);
 Route::post('me', [App\Http\Controllers\Auth\UserController::class, 'me']);
+Route::get('/images', [App\Http\Controllers\API\ImageController::class, 'getImages']);
+
 
